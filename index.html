@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="assets/style.css">
-    <title>Flashcard</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flashcard</title>
+<!-- Link para o seu CSS externo -->
+<link rel="stylesheet" href="assets/style.css" />
+<style>
+/* CSS inline para teste, caso o externo não funcione */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url('img/bg-desktop.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+}
+main {
+    padding: 2rem;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.cartao {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+.cartao h3 {
+    background-color: #f3ad2a;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.cartao__conteudo__pergunta {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.cartao__conteudo__resposta {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+</style>
 </head>
 <body>
-    <main>
-        <section id="container">
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Racionais</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        O que é Racionais?
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                        Os Racionais MC's são um grupo de rap brasileiro formado em São Paulo na década de 1980.
-                         São reconhecidos por sua influência no cenário do hip-hop, destacando-se pela sua técnica, 
-                         estilo e importância cultural.
-                         A banda é composta por Mano Brown, Edi Rock, Ice Blue e DJ KL Jay, 
+<main>
+    <section id="container">
+        <article class="cartao">
+            <div class="cartao__conteudo">
+                <h3>Racionais</h3>
+                <div class="cartao__conteudo__pergunta">
+                    O que é Racionais?
+                </div>
+                <div class="cartao__conteudo__resposta">
+                    Os Racionais MC's são um grupo de rap brasileiro formado em São Paulo na década de 1980.
+                    São reconhecidos por sua influência no cenário do hip-hop, destacando-se pela sua técnica, 
+                    estilo e importância cultural.
+                    A banda é composta por Mano Brown, Edi Rock, Ice Blue e DJ KL Jay, 
                     sendo um dos principais nomes do rap no Brasil.
-                    </div>
                 </div>
-            </article>
-            <article class="cartao">
-                <div class="cartao__conteudo">
-                    <h3>Racionais</h3>
-                    <div class="cartao__conteudo__pergunta">
-                        Quais temas sociais e políticos são frequentemente abordados nas letras do grupo Racionais MC's?
-
-                    </div>
-                    <div class="cartao__conteudo__resposta">
-                        Os Racionais MC's frequentemente abordam temas como desigualdade social, racismo, violência urbana,
-                         pobreza, exclusão social e a luta por direitos. Suas letras refletem as dificuldades enfrentadas pelas
-                         comunidades marginalizadas e promovem uma reflexão sobre a realidade social do Brasil.
-                    </div>
+            </div>
+        </article>
+        <article class="cartao">
+            <div class="cartao__conteudo">
+                <h3>Racionais</h3>
+                <div class="cartao__conteudo__pergunta">
+                    Quais temas sociais e políticos são frequentemente abordados nas letras do grupo Racionais MC's?
                 </div>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>Projeto desenvolvido pela Maithe Heloise</p>
-    </footer>
+                <div class="cartao__conteudo__resposta">
+                    Os Racionais MC's frequentemente abordam temas como desigualdade social, racismo, violência urbana,
+                    pobreza, exclusão social e a luta por direitos. Suas letras refletem as dificuldades enfrentadas pelas
+                    comunidades marginalizadas e promovem uma reflexão sobre a realidade social do Brasil.
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>Projeto desenvolvido pela Maithe Heloise</p>
+</footer>
 </body>
 </html>
