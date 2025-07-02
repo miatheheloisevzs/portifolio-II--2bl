@@ -1,5 +1,5 @@
 body {
-    background:url(img/bg-desktop.webp)
+    background: url(img/bg-desktop.webp); 
     font-family: Bai Jamjuree;
 }
 
@@ -16,8 +16,8 @@ body {
 }
 
 .cartao__conteudo {
+    position: relative; 
     text-align: center;
-    /* background-color: aquamarine; */
     height: 100%;
 }
 
@@ -35,9 +35,6 @@ body {
     margin-top: 1rem;
     padding: 2rem;
 }
-
-
-
 
 
 
