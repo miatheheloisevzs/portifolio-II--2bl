@@ -2,66 +2,53 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8" />
-<title>Exemplo de Background</title>
+<title>Exemplo com Fundo e Cores Ajustadas</title>
 <style>
   body {
-    background-image: url('img/bg-desktop.webp'); 
-    background-size: cover; 
+    background-image: url('img/bg-desktop.webp'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-family: 'Bai Jamjuree', sans-serif; 
+    font-family: 'Bai Jamjuree', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh; 
   }
 
   #container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    padding: 1rem;
-    box-sizing: border-box;
+    display: flex; /* Elementos dispostos em linha */
+    flex-wrap: wrap; /* Quebra de linha se necessário */
+    justify-content: center; /* Centraliza os cartões */
   }
 
-  /* Estilo dos cartões */
   .cartao {
     margin: 1rem;
-    background-color: rgba(8, 36, 87, 0.685);
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhor visualização */
     height: 20rem;
-    flex: 1 1 calc(33% - 2rem);
-    min-width: 200px; 
-    max-width: 300px; 
+    flex-grow: 1;
+    flex-basis: calc(33% - 2rem);
     border-radius: 0.6rem;
-    box-shadow: 0 4px 8px rgba(216, 0, 0, 0.1);
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  /* Conteúdo do cartão */
-  .cartao__conteudo {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+  }
+
+  .cartao__conteudo {
     text-align: center;
+    height: 100%;
+    padding: 2rem 1rem 1rem 1rem; /* Ajuste de padding para evitar sobreposição com o título */
+    position: relative;
   }
 
   /* Título do cartão */
   .cartao__conteudo h3 {
-    background-color: rgb(243, 173, 42);
+    background-color: #f3ad2a; /* Cor que combina com o fundo vermelho, tom dourado */
     color: #fff;
     padding: 0.5rem;
     margin: 0.6rem;
     border-radius: 0.6rem;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    position: absolute; 
+    font-size: 1vw;
+    position: absolute;
     top: 0.6rem;
     left: 0.6rem;
     right: 0.6rem;
@@ -69,10 +56,54 @@
 
   /* Parágrafo do cartão */
   .cartao__conteudo p {
-    margin-top: 3.5rem; 
+    margin-top: 3rem; /* Espaçamento para não ficar sobre o título */
     padding: 1rem;
     font-size: 1rem;
   }
 </style>
 </head>
 <body>
+
+<div id="container">
+  <div class="cartao">
+    <div class="cartao__conteudo">
+      <h3>Título 1</h3>
+      <p>Conteúdo do cartão número 1.</p>
+    </div>
+  </div>
+  <div class="cartao">
+    <div class="cartao__conteudo">
+      <h3>Título 2</h3>
+      <p>Conteúdo do cartão número 2.</p>
+    </div>
+  </div>
+  <div class="cartao">
+    <div class="cartao__conteudo">
+      <h3>Título 3</h3>
+      <p>Conteúdo do cartão número 3.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 0.5rem;
+}
