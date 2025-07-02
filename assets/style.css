@@ -22,7 +22,7 @@ body {
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(243, 173, 42);
+    background-color: rgb(128, 0, 0);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -40,7 +40,7 @@ body {
 
 
 footer {
-    background-color: black;
+    background-color: rgb(184, 119, 0);
     color: white;
     position: fixed;
     bottom: 0;
