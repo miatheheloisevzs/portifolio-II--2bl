@@ -19,7 +19,7 @@ body {
 /* Estilo dos cartões */
 .cartao {
     margin: 1rem;
-    background-color: rgb(126, 0, 0);
+    background-color: rgba(8, 36, 87, 0.685);
     height: 20rem;
     flex: 1 1 calc(33% - 2rem);
     min-width: 200px; 
