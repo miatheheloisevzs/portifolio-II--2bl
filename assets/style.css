@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8" />
-<title>Exemplo com Fundo e Cores Ajustadas</title>
-<style>
-  body {
-    background-image: url('img/bg-desktop.webp'); /* Substitua pelo caminho correto da sua imagem */
+ body {
+    background-image: url('img/bg-desktop.webp'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,19 +9,19 @@
   }
 
   #container {
-    display: flex; /* Elementos dispostos em linha */
-    flex-wrap: wrap; /* Quebra de linha se necessário */
-    justify-content: center; /* Centraliza os cartões */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
   }
 
   .cartao {
     margin: 1rem;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para melhor visualização */
+    background-color: rgb(0, 0, 0); 
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 2rem);
     border-radius: 0.6rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(148, 2, 2, 0.966);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -36,13 +30,13 @@
   .cartao__conteudo {
     text-align: center;
     height: 100%;
-    padding: 2rem 1rem 1rem 1rem; /* Ajuste de padding para evitar sobreposição com o título */
+    padding: 2rem 1rem 1rem 1rem; 
     position: relative;
   }
 
   /* Título do cartão */
   .cartao__conteudo h3 {
-    background-color: #f3ad2a; /* Cor que combina com o fundo vermelho, tom dourado */
+    background-color: #f3ad2a;
     color: #fff;
     padding: 0.5rem;
     margin: 0.6rem;
@@ -56,7 +50,7 @@
 
   /* Parágrafo do cartão */
   .cartao__conteudo p {
-    margin-top: 3rem; /* Espaçamento para não ficar sobre o título */
+    margin-top: 3rem; 
     padding: 1rem;
     font-size: 1rem;
   }
