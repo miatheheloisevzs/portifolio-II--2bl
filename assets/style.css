@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 0, 0);
+    background: url(img/bg-desktop.webp);
     font-family: Bai Jamjuree;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(243, 173, 42);
+    background-color: rgb(168, 0, 0);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
