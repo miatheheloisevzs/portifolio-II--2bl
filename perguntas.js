@@ -32,7 +32,7 @@ criaCartao(
 'Gilmore Girls',
 'Qual o nome da cidade fictícia em que se passa a série?',
 'A cidade se chama Stars Hollow'
-
+)
 criaCartao(
 'Gilmore Girls',
 'Em qual ano foi ao ar o primeiro episódio da série?',
